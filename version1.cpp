@@ -40,18 +40,25 @@ bool esClavo(int posCoche) {
 	else {
 		esClavo = true;
 	}
+
 	return esClavo;
 }
 
+//si cae en una posición sorpresa: 
+
 int buscaPosicionSorpresa(int posCoche) {
+	
 	int n, buscaPosicionSorpresa;
+
 	n = 0 + rand() % (1 + 1 - 0);
+
 	if (n == 0) {
 		buscaPosicionSorpresa = posCoche + 4;
 	}
 	else if (n == 1) {
 		buscaPosicionSorpresa = posCoche - 4;
 	}
+
 	return buscaPosicionSorpresa;
 }
 
