@@ -63,18 +63,23 @@ int buscaPosicionSorpresa(int posCoche) {
 }
 
 bool esPrimo(int n) {
+	
 	bool esPrimo;
 	int dividendo, divisor;
+	
 	dividendo = 2;
 	divisor = 0;
+
 	while (dividendo < n && divisor == 0) {
 		if (n % dividendo == 0) {
 			divisor = divisor + 1;
 		}
 		dividendo = dividendo + 1;
 	}
+
 	if (divisor != 0) esPrimo = false;
 	else esPrimo = true;
+
 	return esPrimo;
 }
 
