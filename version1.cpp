@@ -98,9 +98,12 @@ int avanza() {
 }
 
 bool haLlegado(int posCoche) {
+	
 	bool haLlegado;
-	if (posCoche == LONG_CARRETERA) haLlegado = true;
+
+	if (posCoche >= LONG_CARRETERA) haLlegado = true;
 	else haLlegado = false;
+
 	return haLlegado;
 }
 
