@@ -2,7 +2,6 @@
 #include <cstdlib>
 using namespace std;
 
-// xd
 
 const int LONG_CARRETERA = 9;
 const int MAX_PASOS = 3;
