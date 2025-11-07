@@ -6,16 +6,19 @@ using namespace std;
 const int LONG_CARRETERA = 9;
 const int MAX_PASOS = 3;
 const int TIEMPO_PARADO = 2;
-const bool DEBUG = true;
+const bool DEBUG = false; // 0 = normal y 1 = depuración
 
 bool esSorpresa(int posCoche) {
+	
 	bool esSorpresa;
+
 	if (posCoche % 4 == 0) {
 		esSorpresa = true;
 	}
 	else {
 		esSorpresa = false;
 	}
+
 	return esSorpresa;
 }
 
