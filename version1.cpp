@@ -84,8 +84,16 @@ bool esPrimo(int n) {
 }
 
 int avanza() {
+	
 	int pasos;
-	pasos = MAX_PASOS + rand() % (0 + 1 - MAX_PASOS);
+
+	if (DEBUG == false) {
+		pasos = 0 + rand() % (MAX_PASOS + 1 - 0);
+	}
+	else {
+		cin >> pasos;
+	}
+
 	return pasos;
 }
 
