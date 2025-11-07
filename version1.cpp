@@ -23,6 +23,7 @@ bool esSorpresa(int posCoche) {
 }
 
 bool esClavo(int posCoche) {
+	
 	int divisores = 0, dividendo = 2;
 	bool esClavo;
 
@@ -37,7 +38,7 @@ bool esClavo(int posCoche) {
 		esClavo = false;
 	}
 	else {
-		esClavo = false;
+		esClavo = true;
 	}
 	return esClavo;
 }
